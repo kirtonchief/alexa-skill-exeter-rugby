@@ -1,7 +1,7 @@
 {
-  "name": "bathrugby-alexa-skill",
+  "name": "bathrugbyfan-alexa-skill",
   "version": "1.0.0",
-  "description": "An Alexa Skill that provides info on Bath Rugby fixtures and results.",
+  "description": "An unnoffical Bath Rugby Alexa Skill that provides info on fixtures, results and league table standings.",
   "main": "index.js",
   "scripts": {
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- tests/*",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/bobbyshaw/bathrugby-alexa-skill.git"
+    "url": "git+ssh://git@github.com:bobbyshaw/alexa-skill-bath-rugby-fan.git"
   },
   "keywords": [
     "alexa",
@@ -26,9 +26,9 @@
   "author": "Tom Robertshaw <me@tomrobertshaw.net> (https://www.tomrobertshaw.net)",
   "license": "OSL-3.0",
   "bugs": {
-    "url": "https://github.com/bobbyshaw/bathrugby_bot/issues"
+    "url": "https://github.com/bobbyshaw/alexa-skill-bath-rugby-fan/issues"
   },
-  "homepage": "https://github.com/bobbyshaw/bathrugby_bot#readme",
+  "homepage": "https://github.com/bobbyshaw/alexa-skill-bath-rugby-fan",
   "dependencies": {
     "alexa-sdk": "1.0.7",
     "dateformat": "1.0.12",
