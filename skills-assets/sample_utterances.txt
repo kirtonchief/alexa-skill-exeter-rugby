@@ -1,0 +1,58 @@
+Greeting Afternoon
+Greeting Good day
+Greeting Hello
+Greeting Hi
+Greeting Hi there
+Greeting How do you do
+Greeting Howdy
+Greeting Morning
+Greeting Sup
+Greeting Wassup
+Greeting Yo
+Fixture Are {Team} at home this weekend
+Fixture Is the game on {Date} or {Date} this week
+Fixture Is there a game {Date}
+Fixture Next up
+Fixture What's the game today
+Fixture When's the next {Location} game
+Fixture What time's kickoff
+Fixture When's the next game
+Fixture Who are we against {Date}
+Fixture Who are we playing {Date}
+Fixture Who are we up against next
+Fixture Who do {Team} play next
+Fixture Who do we play {Date}
+Fixture When do we next play {Team} {Location}
+Fixture When's the next {Location} game against {Team}
+Fixture When do they play {Team}
+Fixture When do they play {Team} {Location}
+Table Are {Team} doing well
+Table Are {Team} going to make the play offs
+Table Are we above {Team}
+Table Are we below {Team}
+Table Are we going to be in the play offs
+Table Are {Team} going to be relegated
+Table Are {Team} mid-table
+Table Are {Team} still {Position}
+Table Can {Team} get to the final
+Table How are we doing
+Table How are we doing this year
+Table How many points do we have
+Table What position are we in the table
+Table Where are we
+Table Where are we in the table
+Table Where are {Team} in the table
+Table Where they are in the table
+Result Did we beat {Team}
+Result Did we thrash {Team}
+Result Do we normally score many tries against {Team}
+Result How much did we lose at {Date}
+Result What was the score against {Team}
+Result What was the score {Date}
+Result What the score was {Date}
+Result What was the score the last time we played {Team} at {Location}
+Result When did we last play {Team}
+Result When was the last match against {Team}
+Result Who won last between us and {Team}
+Result What was the score against {Team} when we played them at {Location}
+AMAZON.YesIntent Yes please

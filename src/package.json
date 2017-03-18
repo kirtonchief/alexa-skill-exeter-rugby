@@ -1,0 +1,48 @@
+{
+  "name": "bathrugby-alexa-skill",
+  "version": "1.0.0",
+  "description": "An Alexa Skill that provides info on Bath Rugby fixtures and results.",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- tests/*",
+    "codacy": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- tests/*  && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && rm -rf ./coverage",
+    "test": "npm run test-unit",
+    "test-unit": "NODE_ENV=test mocha 'tests/**/*.js'",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "4.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bobbyshaw/bathrugby-alexa-skill.git"
+  },
+  "keywords": [
+    "alexa",
+    "bot",
+    "bath",
+    "rugby"
+  ],
+  "author": "Tom Robertshaw <me@tomrobertshaw.net> (https://www.tomrobertshaw.net)",
+  "license": "OSL-3.0",
+  "bugs": {
+    "url": "https://github.com/bobbyshaw/bathrugby_bot/issues"
+  },
+  "homepage": "https://github.com/bobbyshaw/bathrugby_bot#readme",
+  "dependencies": {
+    "alexa-sdk": "1.0.7",
+    "dateformat": "1.0.12",
+    "numeral": "1.5.3",
+    "promise": "7.1.1",
+    "request": "2.79.0",
+    "request-promise": "4.1.1"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "codacy-coverage": "2.0.0",
+    "istanbul": "0.4.5",
+    "lambda-local": "1.4.1",
+    "mocha": "3.0.2",
+    "sinon": "1.17.5"
+  }
+}

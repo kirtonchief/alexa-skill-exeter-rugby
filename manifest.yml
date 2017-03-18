@@ -1,5 +1,0 @@
----
-applications:
-- name: 'Bath Rugby Bot'
-  host: bath-rugby-bot
-  memory:   64MB

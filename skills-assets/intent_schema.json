@@ -1,0 +1,69 @@
+{
+    "intents": [
+        {
+            "intent": "Greeting"
+        },
+        {
+            "intent": "Fixture",
+            "slots": [
+                {
+                    "name": "Location",
+                    "type": "Location"
+                },
+                {
+                    "name": "Team",
+                    "type": "Team"
+                },
+                {
+                    "name": "Date",
+                    "type": "AMAZON.DATE"
+                }
+            ]
+        },
+        {
+            "intent": "Result",
+            "slots": [
+                {
+                    "name": "Location",
+                    "type": "Location"
+                },
+                {
+                    "name": "Team",
+                    "type": "Team"
+                },
+                {
+                    "name": "Date",
+                    "type": "AMAZON.DATE"
+                }
+            ]
+        },
+        {
+            "intent": "Table",
+            "slots": [
+                {
+                    "name": "Position",
+                    "type": "Position"
+                },
+                {
+                    "name": "Team",
+                    "type": "Team"
+                }
+            ]
+        },
+        {
+            "intent": "AMAZON.YesIntent"
+        },
+        {
+            "intent": "AMAZON.NoIntent"
+        },
+        {
+            "intent": "AMAZON.CancelIntent"
+        },
+        {
+            "intent": "AMAZON.StopIntent"
+        },
+        {
+            "intent": "AMAZON.HelpIntent"
+        }
+    ]
+}

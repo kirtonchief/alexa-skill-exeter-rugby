@@ -1,27 +1,14 @@
 # Telegram Premiership Rugby Bot
 
-![Travis](https://travis-ci.org/bobbyshaw/bathrugby_bot.svg)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2b80a2431bd949298419db4bfb2a59d5)](https://www.codacy.com/app/tar20_154/bathrugby_bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bobbyshaw/bathrugby_bot&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/2b80a2431bd949298419db4bfb2a59d5)](https://www.codacy.com/app/tar20_154/bathrugby_bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bobbyshaw/bathrugby_bot&amp;utm_campaign=Badge_Coverage)
+This Alexa Skill will fetch results, fixture, and table information for Premiership Rugby teams.
 
-This telegram chat bot will fetch results, fixture, and table information for Premiership Rugby teams.
-
-It uses [IBM Watson Conversation API](https://www.ibm.com/watson/developercloud/conversation.html) to understand intents and entities.
 It uses [Drop22 API](https://api.drop22.net/) to fetch results, fixtures and table information.
 
 Defaults to Bath Rugby 🔵⚫️⚪️.
 
-Example conversation:
-
-![Conversation](https://pbs.twimg.com/media/CszH7XPWIAAP7qy.jpg)
-
-## Usage
-
-There are some environment variables that are expected.  Use `.env.example` to see what these are. Either ensure they are available or copy and complete into a `.env` file which will automatically be read.
-
 ## Other Teams
 
-In theory, this chat bot can be re-purposed to work with other teams by instantiating rugbybot with one of the following team names:
+In theory, this chat bot can be re-purposed to work with other teams by instantiating with one of the following team names:
 
 - northampton saints
 - exeter chiefs
@@ -39,18 +26,53 @@ In theory, this chat bot can be re-purposed to work with other teams by instanti
 
 ## Production
 
-This bot is running in production on IBM Bluemix and can be spoken to or invited to a telegram group chat. The username is "bathrugby_bot".
+This bot is running in production on Amazon Lambda
 
 The first request may be slow as Drop22 is on a Heroku free dyno so will take a second to boot up.
 
 ## Development
+
+We recommend developing on Node v4.3.2 as that is the version used by Amazon Lambda.
+
+You can do this with nvm if you don't already have it.
+
+    brew install nvm
+    nvm install node
+    nvm install 4.3
+
+
+While we don't have tests at the moment, you can run the function locally with:
+
+    ./node_modules/lambda-local/bin/lambda-local -l index.js -e data/events/fixture.js
+
+This is currently set up with an example event that we would get from alexa with an Fixture event.
+
+There are some configuration values that I haven't pulled out into environment
+variables yet.
+
+In index.js you will need to set:
+
+- APP_ID
+
+
+## Deploy code to Lambda
+
+We have a smalls script that uses the aws-cli tool to deploy code changes to Lambda.
+
+Assuming you have aws-cli already installed and configured, run:
+
+    ./upload.sh
+
+## Skill Configuration
+
+This repository is just for the lambda function.
+
+You will also need to create a Alexa Skill that triggers the function. This skill
+will need intents and sample utterances defined. I've included them in the skills-assets
+folder so that we can keep a track of them and copy them in to [https://developer.amazon.com/edw/home.html](https://developer.amazon.com/edw/home.html) when we want to re-configure.
 
 ### Testing
 
 Mocha, Sinon and Chai are used to provide test coverage.
 
 `npm tests`
-
-To generate the HTML code coverage report in ./coverage, run:
-
-`npm run coverage`
