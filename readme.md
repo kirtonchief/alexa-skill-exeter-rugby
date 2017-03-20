@@ -1,4 +1,4 @@
-# Telegram Premiership Rugby Bot
+# Alex Skill - Premiership Rugby Results, Fixtures and Table Standings.
 
 This Alexa Skill will fetch results, fixture, and table information for Premiership Rugby teams.
 
