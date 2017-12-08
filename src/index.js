@@ -9,7 +9,7 @@ var ResultAbility = require('./lib/ability/result');
 var TableAbility = require('./lib/ability/table');
 
 const APP_ID = '';
-const TEAM = 'bath rugby';
+const TEAM = 'exeter';
 
 var SKILL_STATES = {
     RESULT: "_RESULT", // We've asked if they wish to know a result
