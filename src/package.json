@@ -20,15 +20,15 @@
   "keywords": [
     "alexa",
     "bot",
-    "bath",
+    "exeter",
     "rugby"
   ],
   "author": "Tom Robertshaw <me@tomrobertshaw.net> (https://www.tomrobertshaw.net)",
   "license": "OSL-3.0",
   "bugs": {
-    "url": "https://github.com/bobbyshaw/alexa-skill-bath-rugby-fan/issues"
+    "url": "https://github.com/kirtonchief/alexa-skill-exeter-rugby"
   },
-  "homepage": "https://github.com/bobbyshaw/alexa-skill-bath-rugby-fan",
+  "homepage": " https://github.com/kirtonchief/alexa-skill-exeter-rugby",
   "dependencies": {
     "alexa-sdk": "1.0.7",
     "dateformat": "1.0.12",
