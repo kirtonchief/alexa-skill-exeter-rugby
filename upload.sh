@@ -14,7 +14,7 @@ zip -r /tmp/lambda-upload.zip index.js node_modules/ lib/
 aws lambda update-function-code \
   --region eu-west-1 \
   --profile personal \
-  --function-name BathRugbyAlexaSkill \
+  --function-name ExeterRugbyAlexaSkill \
   --zip-file fileb:///tmp/lambda-upload.zip \
   --publish
 
