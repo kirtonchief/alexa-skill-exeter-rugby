@@ -76,3 +76,8 @@ folder so that we can keep a track of them and copy them in to [https://develope
 Mocha, Sinon and Chai are used to provide test coverage.
 
 `npm tests`
+
+#### Repurpose to Exeter Chiefs as Default
+
+With Rob's encouragement, this is an attempt to produce an Extere Chiefs version of this skill
+
